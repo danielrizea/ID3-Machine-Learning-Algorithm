@@ -1,0 +1,7 @@
+2
+C1 C2
+4
+outlook discret 3 sunny overcast rain
+temperature numeric
+humidity numeric
+windy discret 2 true false

@@ -1,0 +1,15 @@
+14
+sunny 85 85 false C2
+sunny 80 90 true C2
+overcast 83 78 false C1
+rain 70 96 false C1
+rain ? 80 false C1
+rain 65 70 true C2
+overcast 64 65 true C1
+sunny 72 95 false C2
+sunny 69 70 false C1
+rain 75 80 false C1
+sunny 75 70 true C1
+overcast 72 90 true C1
+overcast 81 75 false C1
+rain 71 80 true C2

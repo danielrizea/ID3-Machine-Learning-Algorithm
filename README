@@ -1,0 +1,37 @@
+Rizea Daniel-Octavian
+341C1
+
+
+					Tema 1 -ID3-
+
+	
+	Tema a fost dezvoltata si rulata in eclipse. Parametrii ce trebuie pasati : fisier_atribute.txt fisier_set_invatare.txt fisier_test.txt;
+
+	Structura tema :
+		1.Citire date de intrare.   	
+		2.Apelare functie aflare atribute necunoscute.
+		3.Discretizare valori numerice.
+		4.Apelare algorithm ID3 si constructie arbore clasificare/
+		5.Printare reguli in consola.
+		6.Clasificare date test si afisare rezultat in consola si fisier iesire
+		
+
+	2.Functia aflare atribute necunsocute functioneaza doar daca in exemplele de invatare exista o singura positie de atribut lipsa.
+	In acest caz se retin exemplele ce contin atribute lipsa intr-un set separat, se creeaza noi atribute si set obiecte invatare astfel:
+			-> atribute: din setul atribute se scoate atributul cu valori lipsa, si se adauga atributul clasa (clasele de clasificare al setului initial de invatare)
+			-> noul set de invatare : se scot valorile de pe pozitia atributului lipsa si se adauga valorile de clasificare asa cum ar fi atribute
+			-> clase : noile clase de invatare sunt valorile cunoscute din setul de invatare initial.
+
+			Se executa ID3 dupa care se clasifica setul care are valori nedefinite si se afla valoriel lipsa.
+
+	3.Discretizare valori numeric :
+		2 functii de unde se pot alege diverse comportamente:
+			-> prima ofera o distributie aproximativ egala in bucket-uri 
+
+			-> a doua ofera o distributie bazata pe momentul in care se schimba apartenenta unei clase
+			Aceasta inregistreaza intr-un MapTree o valoare de tip Association, care pentru fiecare valaore posibila numeric inregistreaza clasele din care face parte respectiva valoare ,astfel se paote determina clasa dominanta din care face parte (clasa cea mai frecventa in la care apare respectiva valoare), dupa care se parcurge setul de valori si se determina intervale doar in momentul in care se schimba clasa de clasificare.Astfel se realizeaza intervale si se discretizeaza valorile.
+
+
+
+
+

@@ -1,0 +1,3 @@
+2
+overcast 63 66 true
+sunny 71 94 false
